@@ -1,0 +1,153 @@
+* {
+	box-sizing: border-box;
+
+}
+
+body{
+	font-family: "Raleway", sans-serif;
+	text-decoration: none;
+	margin: 0;
+	color: #585858;
+	padding: 0 10px;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 95%;
+	
+}
+
+h1 {
+	font-size: 3em;
+	letter-spacing: 2px;
+	font-variant: small-caps;
+
+}
+
+h2 {
+	font-family: 'Petit Formal Script', cursive;
+	font-size: 1.75em;
+	text-align: center;
+	padding: 1em 0;
+}
+
+h3 {
+	font-family: 'Petit Formal Script', cursive;
+	font-size: 1.5em;
+
+}
+
+h4 {
+	font-size: 1.25em;
+}
+
+header {
+	display: inline;
+	text-align: center;
+}
+
+footer {
+	text-align: center;
+	padding-top: 20px;
+}
+
+i {
+	margin: 0 10px;
+}
+
+
+ul {
+	display: flex;
+	padding: 20px;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+li {
+	list-style: none;
+	display: inline;
+	padding: 10px;
+	
+}
+
+.main-nav {
+	justify-content: center;
+}
+
+a {
+	text-decoration: none;
+	color: tomato;
+	cursor: pointer;
+}
+
+
+.project {
+	display: block;
+}
+
+.grid-item-title {
+	text-align: center;
+
+	
+}
+
+.project-image {
+	display: block;
+	margin: auto;
+}
+
+img {
+	max-width: 90vw;
+	display: block;
+	margin: 0 auto;
+
+}
+
+.skills-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+	
+	.wrapper {
+	border: 5px solid #ccc;
+	width: 75%;
+		padding: 0 3em;
+	}
+
+
+	.project-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding-left: 2em;
+	padding-right: 2em;
+	grid-gap: 2em
+}
+	
+	img {
+		max-width: 35vw;
+	}
+	
+	.skills-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 2em;
+	}
+}
+
+
+
+
