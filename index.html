@@ -1,44 +1,45 @@
 <!DOCTYPE html>
-  <html>
-  <head>
-
-<title>Hannah Barber</title>
+<html lang="en">
+<head>
+<title>Hannah Barber's Website</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&family=Raleway&display=swap" rel="stylesheet">
-<link href="style.css" type="text/css" rel="stylesheet">
+<link href="css/style.css" type="text/css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  	<header>
-			<h1><a href="index.html">Hannah Barber</a></h1>
-			<nav>
-				<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="projects.html">Projects</a></li>
-					</ul>
-			</nav>
-		</header>
+	<header>
+		<nav class="navbar">
+			<ul>
+				<li class="nav-item">About</li>
+				<li class="nav-item">Portfolio</li>
+				<li class="nav-item">Contact</li>
+			</ul>
+		</nav>
+		<div class="img-div">
+			<img id="headshot" alt="headshot of Hannah Barber" src="images/HannahHeadshot-0543.jpg">
+			<div class="welcome">Hello, I'm Hannah Barber!</div>
+		</div>
+	</header>
+	
+	<!-- ABOUT/SKILLS -->
 		<div class="wrapper">
-			<div>
-				<h2>About Me</h2>
+			<div class="about-container">
+				<h2 id="about">About Me</h2>
+				<div class="about">
 				 <p>I am a driven professional currently taking steps to transition from a career in the non-profit sector into front-end web development. As a life-long learner that's passionate about
 					bringing a meaningful digital content experience to a diverse audience,
 					I incorporate design thinking into my everyday work to bring the user
 					the best possible experience.</p>
-					<p>I'm currently pursuing an online degree with Treehouse and am on track to graduate with a certificate in their Front-End Web Development track. In my free time I enjoy getting outdoors, especially hiking, running, and outdoor photography.</p>
+					<p>I bring a unqiue perspective to my designs based on my nontraditional background. By nature, I'm a reliable and thoughtful person. I bring those same qualities to any work environment I'm in.</p>
+					<p>In my free time I enjoy getting outdoors, especially hiking, running, and outdoor photography.</p>
+				</div>
 			</div>
-			<div>
-				<h2>My Background</h2>
-					<p> After graduating from Rochester Institute of Technology with a
-					B.S. in Museum Studies and Syracuse University with an M.A. in Museum
-					Studies I became the Collections Manager at Genesee Country Village and Museum.</p>
-					<p>In that position I was given the duty of creating and managing an online platform for the museum's online collection. It was through that opportunity that I found my interest and passion for coding. Being an RIT alumna, I was always surrounded by opportunities to learn coding languages but I never got the chance to pursue them. It wasn't until I was given a chance in my professional career that I realized how much thought, care, and design-thinking went into creating a usable and accessible website. I unexpectedly fell in love with it. </p>
-				 <p>So I am here today, trying to transition my skillset and soaking in every ounce of knowledge I can to truly move into a field that can challenge and excite me every day. Please feel free to check out my GitHub account to see my latest projects.</p>
-			</div>
-			<div>
-				<h2>Skills</h2>	
-					<div class="skills-wrapper">
+
+			<div class="skills-container">
+				<h2 id="skills">Skills</h2>	
+					<div class="skills-wrapper skills">
 							<p>Javascript</p>
 							<p>HTML &amp; CSS</p>
 							<p>Figma</p>
@@ -50,14 +51,212 @@
 							<p>Online Exhibition Curation</p>
 					</div>
 			</div>
-	</div>   
+
+
+<!-- WEB DESIGN PROJECTS -->
+		<div id="portfolio">
+			<h2 class="portfolio-label">Web Design</h2>
+		</div>
+		<div class="project-grid">
+			
+<!-- PROJECT -->			
+			<div class="project">
+				<h3 class="grid-item-title">Employee Directory</h3>
+				<div>
+					<h4>The Challenge:</h4>
+					<p class="description">Using external APIs, I created an employee directory with randomly generated user profiles. Their contact information and employee information are showcased when clicked.</p>
+				</div>
+				<h5>Tools used:</h5>
+				<div class="tools">	
+					<p>Javascript</p>
+					<p>HTML</p>
+					<p>CSS</p>
+					<p>External API</p>
+				</div>
+			</div>
+			<div class="project-image">
+				<a target="blank" href="https://hbarber2.github.io/Tech-Degree-Project-8/">
+					<img class="img-card" src="images/employee-directory.png" alt="A web interface with employee icons and descriptions.">
+				</a>
+			</div>
+<!-- PROJECT -->
+			<div class="project">
+				<h3 class="grid-item-title">Web-App Dashboard</h3>
+				<div>
+					<h4>The Challenge:</h4>
+					<p class="description">Create a user friendly dashboard application with mobile responsiveness. Using interactive charts and graphs, design a user interface that is both attractive and functional.</p>
+				</div>
+				<h5>Tools used:</h5>
+				<div class="tools">
+					<p>Javascript</p>
+					<p>HTML</p>
+					<p>CSS</p>
+					<p>SVG animation</p>
+				</div>
+			</div>
+			<div class="project-image">
+				<a target="blank" href="https://hbarber2.github.io/Tech-Degree-Project-7/">
+					<img class="img-card" src="images/dashboard-interface.png" alt="A web interface with navigation icons, user information, and charts.">
+				</a>
+			</div>
+			
+<!-- PROJECT -->
+			<div class="project">
+				<h3 class="grid-item-title">Interactive Photo Gallery</h3>
+				<div>
+					<h4>The Challenge:</h4>
+					<p class="description">Create an interactive photo gallery that allows users to sort through photographs in order to match their search criteria.</p>
+				</div>
+				<h5>Tools used:</h5>
+				<div class="tools">
+					<p>Javascript</p>
+					<p>HTML</p>
+					<p>CSS</p>
+				</div>
+			</div>
+			<div class="project-image">
+				<a target="blank" href="https://hbarber2.github.io/Tech-Degree-Project-5/">
+					<img class="img-card" src="images/photo-sort.png" alt="A web interface with a variety of photographs and search bar.">
+				</a>
+			</div>
+			
+<!-- PROJECT -->
+			<div class="project">
+				<h3 class="grid-item-title">Secondlife</h3>
+				<div>
+					<h4>The Challenge:</h4>
+					<p class="description">To design a user interface for the product detail screen. The layout offers the user a brief overall description of the product accompanied with large images.</p>
+				</div>
+				<h5>Tools used:</h5>
+				<div class="tools">
+					<p>Figma</p>
+				</div>
+			</div>
+			<div class="project-image">
+				<img class="img-card" src="images/Rectangle.png" alt="a three dimensional graphic of a user interface for a retail store.">
+			</div>
+			
+<!-- PROJECT -->
+			<div class="project">
+				<h3 class="grid-item-title">.iBank Mobile Interface</h3>
+				<div>
+					<h4>The Challenge:</h4>
+					<p class="description">A mobile banking app needs an interface that's both visually appealing and concisely displays the essential information to the user. For this challenge, a online bank needed a home interface that provided account information, transaction history, and money transfer sections.</p>
+				</div>
+				<h5>Tools used:</h5>
+				<div class="tools">
+					<p>Figma</p>
+				</div>
+			</div>
+			<div class="project-image"> 
+				<img class="img-card" src="images/Bankmockup.png" alt="iBank mobile application interface with account information.">
+			</div>
+			
+<!-- PROJECT -->
+			<div class="project">
+				<h3 class="grid-item-title">Registration Form</h3>
+				<div>
+					<h4>The Challenge:</h4>
+					<p class="description">Design a functional registration form with required fields, dropdown menu, and setting menu.</p>
+				</div>
+				<h5>Tools used:</h5>
+				<div class="tools">
+					<p>HTML</p>
+					<p>CSS</p>
+				</div>
+			</div>
+			<div>
+				<a target="blank" href="https://hbarber2.github.io/Tech-Degree-Project-3/">
+					<img class="img-card" id="project-image" src="images/registration-form.png" alt="A web interface with form fields.">
+				</a>
+			</div>
+		</div>
+
+<!-- GRAPHIC DESIGN PROJECTS -->
+		<div>
+			<h2 class="design-label">Graphic Design</h2>
+		</div>
+		<div class="project-grid">
+	
+<!-- PROJECT -->
+			<div  class="project">
+				<h3 class="grid-item-title">Love n' Lourdes Beer Label</h3>
+				<h5>Tools used:</h5>
+				<div class="tools">
+					<p>Adobe Illustrator</p>
+					<p>Adobe Photoshop</p>
+				</div>
+			</div>
+			<div class="project-image">
+				<a href="images/beerbottlemockup.png" target="_blank">
+					<img class="img-card" alt="two beer bottles with custom labels." src="images/beerbottlemockup.png">
+				</a>
+			</div>
+			
+<!-- PROJECT -->
+			<div class="project">
+				<h3 class="grid-item-title">Crisis: A Visual Exploration of Conflict Double Gate Fold Pamphlet</h3>
+				<h5>Tools used:</h5>
+				<div class="tools">
+					<p>Adobe Illustrator</p>
+					<p>Adobe Photoshop</p>
+					<p>Adobe InDesign</p>
+				</div>
+			</div>
+			<div class="project-image">
+				<a href="images/crisis-brochure.png" target="blank">
+					<img class="img-card" alt="a trifold borchure with images and text regarding the exhibition." src="images/crisis-brochure.png">
+				</a>
+			</div>
+			
+<!-- PROJECT -->
+			<div class="project">
+				<h3 class="grid-item-title">Glass of the Architects: Vienna 1900-1937 Mailer</h3>
+				<h5>Tools used:</h5>
+				<div class="tools">
+					<p>Adobe Illustrator</p>
+					<p>Adobe Photoshop</p>
+					<p>Adobe InDesign</p>
+				</div>
+			</div>
+			<div class="project-image">
+				<a href="images/postcards.png" target="blank">
+					<img class="img-card" alt="two sides of the same postcard regarding an exhibition opening at the Corning Museum of Glass." src="images/postcards.png">
+				</a>
+			</div>
+		</div>
+	</div>
+
+		
+<!-- CONTACT -->
+	
+	<div>
+		<h3 id="contact">Would you like to work together? Let's chat!</h3>
+	</div>
+		<div>
+			<a href="mailto:example@example.com">
+				<svg id="mail" width="200" height="100" viewBox="0 0 90.702 61.22" xmlns="http://www.w3.org/2000/svg">
+					<g stroke="#fff">
+						<path d="M1.128 1.128h88.446v58.964H1.128z" fill="none" stroke-width="2.256"/>
+						<path d="M1.247 1.317l45.421 46.271" stroke-width="2.282"/>
+						<path d="M89.538 1.19L45.649 48.21" stroke-width="2.22"/>
+					</g>
+				</svg>
+			</a>
+		</div>
+		
+<!-- FOOTER -->
+
  	<footer>
 		<a href="https://www.linkedin.com/in/hannah-barber-9b95b2117/" target="BLANK"><i class="fa fa-linkedin fa-2x"></i></a>
 		<a href="https://www.github.com/hbarber2" target="blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-		<p>© 2020 Hannah Barber</p>
+		<p>© 2021 Hannah Barber</p>
+		<p><a href="#">Back to top</a></p>
+		<script src="app.js"></script>
 	</footer>
 </body>	
 </html>
+
 
 	
 	

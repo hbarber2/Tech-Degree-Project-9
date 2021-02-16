@@ -1,44 +1,55 @@
 * {
 	box-sizing: border-box;
-
 }
 
 body{
 	font-family: "Raleway", sans-serif;
 	text-decoration: none;
 	margin: 0;
-	color: #585858;
-	padding: 0 10px;
+	color: white;
+	background-color: rgb(53, 117, 96);
 }
 
 .wrapper {
 	margin: 0 auto;
-	width: 95%;
-	
+	background-color: rgb(53, 117, 96);
+	width: 90%;
+	position: relative;
+}
+
+.active {
+	background-color: rgb(53, 117, 96);
+	border-radius: 5px;
 }
 
 h1 {
 	font-size: 3em;
 	letter-spacing: 2px;
-	font-variant: small-caps;
-
+	padding: 40px 0 0 0;
+	font-family: 'Petit Formal Script', cursive;
 }
 
 h2 {
 	font-family: 'Petit Formal Script', cursive;
 	font-size: 1.75em;
 	text-align: center;
-	padding: 1em 0;
+	padding-top: 2em;
+
 }
 
 h3 {
 	font-family: 'Petit Formal Script', cursive;
 	font-size: 1.5em;
-
+	text-align: center;
 }
 
 h4 {
 	font-size: 1.25em;
+}
+
+h5{
+	font-size: 1.15em;
+	margin-bottom: .5em;
 }
 
 header {
@@ -46,9 +57,21 @@ header {
 	text-align: center;
 }
 
+
 footer {
 	text-align: center;
 	padding-top: 20px;
+}
+
+button {
+padding: 10px 20px;
+    color: #585858;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    display: block;
+    font-family: inherit;
+    margin: 0 auto;
 }
 
 i {
@@ -58,7 +81,8 @@ i {
 
 ul {
 	display: flex;
-	padding: 20px;
+	margin: 0;
+	padding: 0;
 	justify-content: center;
 	flex-wrap: wrap;
 }
@@ -67,19 +91,17 @@ li {
 	list-style: none;
 	display: inline;
 	padding: 10px;
-	
 }
 
-.main-nav {
-	justify-content: center;
+#headshot {
+	border-radius: 5px;
 }
 
 a {
 	text-decoration: none;
-	color: tomato;
+	color: #ffffff;
 	cursor: pointer;
 }
-
 
 .project {
 	display: block;
@@ -87,20 +109,20 @@ a {
 
 .grid-item-title {
 	text-align: center;
-
-	
+	padding-top: 1em;
 }
 
 .project-image {
 	display: block;
 	margin: auto;
+	padding-top: 3em;
 }
 
 img {
 	max-width: 90vw;
 	display: block;
 	margin: 0 auto;
-
+	border-radius: 5px;
 }
 
 .skills-wrapper {
@@ -111,7 +133,51 @@ img {
 	text-align: center;
 }
 
+.welcome {
+	display: block;
+	font-family: 'Petit Formal Script', cursive;
+	font-size: 2.5em;
+	padding-top: 20px;
+}
 
+.navbar {
+	overflow: hidden;
+	position: static;
+	top: 0;
+	width: 100%;
+	background-color: #cabdaf;
+	z-index: 5;
+	margin: 0 auto;
+	padding: 20px;
+	transition: .6s;
+}
+
+.navbar.sticky {
+	padding: 5px;
+	background-color: #585858;
+}
+
+.tools {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.tools p {
+	padding-right: 2em;
+}
+
+#mail {
+	width: 60px;
+	display: block;
+	margin: 0 auto;
+}
+
+	.portfolio-label,
+	.design-label{
+		text-decoration: underline;
+		
+}
 
 
 
@@ -120,23 +186,30 @@ img {
 @media (min-width: 768px) {
 	
 	.wrapper {
-	border: 5px solid #ccc;
-	width: 75%;
-		padding: 0 3em;
+		width: 100%;
 	}
 
+
+	
+	h1 {
+		float: right;
+		padding: 40px 20px 0 0;
+	}
 
 	.project-grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	padding-left: 2em;
-	padding-right: 2em;
-	grid-gap: 2em
-}
-	
-	img {
-		max-width: 35vw;
+		display: grid;
+		grid-template-columns: 40% 1fr;
+		padding-left: 4em;
+		padding-right: 2em;
+		padding-top: 2em;
+		padding-bottom: 2em;
+		grid-gap: 2em;
+		background-color: white;
+		color: #585858;
+
 	}
+	
+
 	
 	.skills-wrapper {
 	display: grid;
@@ -146,6 +219,126 @@ img {
 	text-align: center;
 	padding-bottom: 2em;
 	}
+	
+	#headshot {
+		width: auto;
+		height: 100vh;
+		margin: 0;
+	}
+	
+	.img-card {
+		max-width: 40vw;
+	}
+	
+	.img-div {
+		position: relative;
+	}
+	
+	.about-container {
+		width: 80%;
+		height: auto;
+		display: grid;
+		grid-template-columns: 300px 1fr;
+		grid-template-rows: auto;
+		padding-top: 2em;
+		margin: 10px auto;
+		position: relative;
+		
+	}
+	
+	#about {
+    background-color: #f5d54a;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 100%;
+    padding: 40px 0;
+    text-align: center;
+    max-height: 200px;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+		color: #585858;
+		box-shadow: 2px 2px 10px black;
+	}
+	
+	.about {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		padding: 0 80px;
+	}
+	
+	.skills-container {
+		width: 80%;
+		height: auto;
+		display: grid;
+		grid-template-columns: 1fr 300px;
+		grid-template-rows: 1fr;
+		padding-top: 2em;
+		margin: 0 auto;
+		position: relative;
+		padding-bottom: 3em;
+	}
+	
+	#skills {
+		background-color: #f5d54a;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 100%;
+    padding: 40px 0;
+    text-align: center;
+    max-height: 200px;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+		color: #585858;
+		box-shadow: 2px 2px 10px black;
+	}
+	
+	.skills {
+		grid-column-start: 1;
+		grid-column-end: 2;
+	}
+	
+	.portfolio-label,
+	.design-label{
+		border-radius: 5px;
+		max-height: 200px;
+		color: white;
+		width: 300px;
+		padding: 40px 0;
+		text-align: center;
+		margin: 0 auto;
+	}
+	
+	.project{
+		padding-top: 20px;
+	}
+	
+	.project-image {
+		max-width: 35vw;
+	}
+	
+	.description {
+		max-width: 500px;
+	}
+	
+}
+
+@media (min-width: 880px) {
+
+	
+		.welcome {
+		display:block;
+		position: absolute;
+    width: auto;
+    padding-bottom: 20%;
+    top: 45%;
+    left: 56%;
+    font-family: 'Petit Formal Script';
+    font-size: 5em;
+    color: white;
+	}
+	
 }
 
 
